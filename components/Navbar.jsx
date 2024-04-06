@@ -8,7 +8,7 @@ import { Dialog } from "@headlessui/react";
 
 const Navbar = () => {
   const [mobileMenuOpen, setmobileMenuOpen] = useState(false);
-
+  const [loggedIn, setloggedIn] = useState(false);
   return (
     <div>
       <nav className="flex justify-between w-full mb-4 pt-3 h-16 shadow-inner shadow-xl bg-gray-0 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
@@ -18,9 +18,11 @@ const Navbar = () => {
           </p>
         </a>
         <div className="hidden lg:flex lg:items-center lg:-mt-2 lg:px-3 lg:py-1.5 lg:gap-3 lg:text-lg lg:text-black ">
-          <Link href="/homepage">Homepage</Link>
+          <Link href="/">Homepage</Link>
           <Link href="/contact">Contact</Link>
           <Link href="/about">About</Link>
+          {loggedIn}
+          <Link href="/login">Login</Link>
         </div>
 
         <div className="flex lg:hidden">
@@ -62,7 +64,7 @@ const Navbar = () => {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   <Link
-                    href="/homepage"
+                    href="/"
                     className="-mx-3 block rounded-lg px-3 py-2 text-lg leading-7 text-black hover:bg-gray-400 hover:bg-clip-padding hover:backdrop-filter hover:backdrop-blur-2xl hover:bg-opacity-5"
                   >
                     Homepage
@@ -78,6 +80,12 @@ const Navbar = () => {
                     className="-mx-3 block rounded-lg px-3 py-2 text-lg leading-7 text-black hover:bg-gray-400 hover:bg-clip-padding hover:backdrop-filter hover:backdrop-blur-2xl hover:bg-opacity-5"
                   >
                     About
+                  </Link>
+                  <Link
+                    href="/login"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-lg leading-7 text-black hover:bg-gray-400 hover:bg-clip-padding hover:backdrop-filter hover:backdrop-blur-2xl hover:bg-opacity-5"
+                  >
+                    Login
                   </Link>
 
                   <div className="py-6"></div>

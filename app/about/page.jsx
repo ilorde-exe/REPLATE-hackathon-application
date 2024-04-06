@@ -2,8 +2,10 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="px-8 py-4 mt-8">
-      <p>
+    <div className="px-6 py-2 mt-8">
+      <p className="p-4 rounded-xl shadow-lg border-2 ">
+        <h1 className="text-2xl text-bold">About Us</h1>
+        <br />
         Welcome to Ummeed, where hope meets action through the power of sharing
         food.
         <br />

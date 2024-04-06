@@ -2,9 +2,10 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="flex flex-col px-8 py-4 mt-8">
-      <h1 className="text-2xl text-bold">Contact Us</h1>
-      <p>
+    <div className="flex flex-col px-6 py-2 mt-8">
+      <p className="p-4 rounded-xl shadow-lg border-2">
+        <h1 className="text-2xl text-bold text-black">Contact Us</h1>
+        <br />
         Contact Us Have a question, feedback, or just want to get in touch with
         the Ummeed team? We'd love to hear from you! Feel free to reach out to
         us using the contact information below:
