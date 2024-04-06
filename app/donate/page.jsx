@@ -29,7 +29,7 @@ const page = () => {
                 height="375"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBHgskmG3f7puRGh6avIDMryMKu8w7oR2M&&q=india`}
+                src={`https://www.google.com/maps/embed/v1/place?key=APIKEY=india`}
               ></iframe>
             )}
 
