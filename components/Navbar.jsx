@@ -8,7 +8,7 @@ import { Dialog } from "@headlessui/react";
 
 const Navbar = () => {
   const [mobileMenuOpen, setmobileMenuOpen] = useState(false);
-  const [loggedIn, setloggedIn] = useState(false);
+
   return (
     <div>
       <nav className="flex justify-between w-full mb-4 pt-3 h-16 shadow-inner shadow-xl bg-gray-0 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 ">
@@ -21,7 +21,6 @@ const Navbar = () => {
           <Link href="/">Homepage</Link>
           <Link href="/contact">Contact</Link>
           <Link href="/about">About</Link>
-          {loggedIn}
           <Link href="/login">Login</Link>
         </div>
 
@@ -52,7 +51,7 @@ const Navbar = () => {
               </Link>
               <button
                 type="button"
-                className="-mt-3 p-2.5 text black inline-flex items-center justify-center rounded-xl text-black shadow-xl ring-1 ring-gray-900/5"
+                className="-mt-3 p-2.5 text black inline-flex items-center justify-center rounded-xl text-black border-2 shadow-xl ring-1 ring-gray-900/5"
                 onClick={() => setmobileMenuOpen(false)}
               >
                 <span className="sr-only">Close Menu</span>
@@ -66,28 +65,31 @@ const Navbar = () => {
                   <Link
                     href="/"
                     className="-mx-3 block rounded-lg px-3 py-2 text-lg leading-7 text-black hover:bg-gray-400 hover:bg-clip-padding hover:backdrop-filter hover:backdrop-blur-2xl hover:bg-opacity-5"
+                    onClick={() => setmobileMenuOpen(false)}
                   >
                     Homepage
                   </Link>
                   <Link
                     href="/contact"
                     className="-mx-3 block rounded-lg px-3 py-2 text-lg leading-7 text-black hover:bg-gray-400 hover:bg-clip-padding hover:backdrop-filter hover:backdrop-blur-2xl hover:bg-opacity-5"
+                    onClick={() => setmobileMenuOpen(false)}
                   >
                     Contact
                   </Link>
                   <Link
                     href="/about"
                     className="-mx-3 block rounded-lg px-3 py-2 text-lg leading-7 text-black hover:bg-gray-400 hover:bg-clip-padding hover:backdrop-filter hover:backdrop-blur-2xl hover:bg-opacity-5"
+                    onClick={() => setmobileMenuOpen(false)}
                   >
                     About
                   </Link>
                   <Link
-                    href="/login"
+                    href="http://10.19.12.15:3000/"
                     className="-mx-3 block rounded-lg px-3 py-2 text-lg leading-7 text-black hover:bg-gray-400 hover:bg-clip-padding hover:backdrop-filter hover:backdrop-blur-2xl hover:bg-opacity-5"
+                    onClick={() => setmobileMenuOpen(false)}
                   >
                     Login
                   </Link>
-
                   <div className="py-6"></div>
                 </div>
               </div>
