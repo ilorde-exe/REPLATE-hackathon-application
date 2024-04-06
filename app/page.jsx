@@ -18,24 +18,9 @@ export default function Home() {
       console.error("Error fetching data:", error);
     }
   };
-  const processData = () => {
-    const dataString = JSON.stringify(data, null, 2);
-    const obj = JSON.parse(dataString);
-
-    const names = data.map((event) => event["Name of the Event"]);
-    const descriptions = data.map((event) => event.description);
-    const addresses = data.map((event) => event.Address);
-
-    setEventNames(names);
-    setEventDescriptions(descriptions);
-    setEventAddresses(addresses);
-
-    return <p>{obj.Address}</p>;
-  };
 
   useEffect(() => {
     fetchDataFromBenkiAPI();
-    processData;
   }, []);
 
   return (
@@ -45,14 +30,8 @@ export default function Home() {
           <span className="text-2xl text-bold">
             Create a beacon for food donation
           </span>
-          <iframe
-            width="360"
-            height="375"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBHgskmG3f7puRGh6avIDMryMKu8w7oR2M
-            &q=mekhricircle"
-          ></iframe>
+          <br />
+          <br />
           Click the button below to let charitable organizations know about
           excess food
           <div className="mt-4 flex justify-center">
@@ -64,17 +43,41 @@ export default function Home() {
               <span class="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-pink-500 rounded-full opacity-30 group-hover:rotate-90 ease"></span>
               <span class="relative text-white">Donate</span>
             </Link>
-            {data ? (
-              <div>
-                <h2>Data from API:</h2>
-                <pre>{JSON.stringify(data, null, 2)}</pre>
-                <p>{}</p>
-              </div>
-            ) : (
-              <p>Loading...</p>
-            )}
           </div>
         </div>
+        {data ? (
+          <div>
+            <br />
+            {data.map((event) => (
+              <div className="flex flex-col py-2 ">
+                <div className="p-4 rounded-xl shadow-lg border-2">
+                  <div key={event.EntryID}>
+                    <h2 className="text-lg text-semibold">
+                      {event["Name of the Event"]}
+                    </h2>
+                    <p>Date: {event.Date}</p>
+                    <p>
+                      <iframe
+                        width="360"
+                        height="375"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBHgskmG3f7puRGh6avIDMryMKu8w7oR2M&q=${encodeURIComponent(
+                          event.Address
+                        )}`}
+                      ></iframe>
+                      <br />
+                      {event.Address}
+                    </p>
+                    <p>Description: {event.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p>Loading...</p>
+        )}
       </div>
     </div>
   );
