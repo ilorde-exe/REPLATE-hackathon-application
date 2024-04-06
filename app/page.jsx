@@ -5,9 +5,6 @@ import axios from "axios";
 
 export default function Home() {
   const [data, setData] = useState(null);
-  const [eventNames, setEventNames] = useState([]);
-  const [eventDescriptions, setEventDescriptions] = useState([]);
-  const [eventAddresses, setEventAddresses] = useState([]);
   const fetchDataFromBenkiAPI = async () => {
     try {
       const response = await axios.get(
