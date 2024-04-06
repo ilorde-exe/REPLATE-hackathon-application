@@ -59,7 +59,7 @@ export default function Home() {
                         height="375"
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
-                        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBHgskmG3f7puRGh6avIDMryMKu8w7oR2M&q=${encodeURIComponent(
+                        src={`https://www.google.com/maps/embed/v1/place?key=APIKEY=${encodeURIComponent(
                           event.Address
                         )}`}
                       ></iframe>
