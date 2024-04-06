@@ -6,10 +6,10 @@ const page = () => {
   const [input, setInput] = useState("");
   return (
     <div>
-      <div class="font-[sans-serif] text-[#333]">
+      <div class="font-serif text-[#333]">
         <div class="min-h-screen flex flex-col items-center justify-center py-6 px-4">
-          <div class="max-w-md w-full border py-8 px-6 rounded-xl border-gray-300 bg-white">
-            <h2 class="text-center text-3xl font-extrabold">
+          <div class="max-w-md w-full border-2 py-8 px-6 rounded-xl border-amber-100 bg-amber-50">
+            <h2 class="text-center text-3xl font-extrabold font-serif">
               Enter all the neccessary details
             </h2>
             <br />
@@ -62,14 +62,12 @@ const page = () => {
                   }}
                 ></textarea>
               </div>
-              <div class="!mt-10">
-                <button
-                  type="submit"
-                  class="w-full py-2.5 px-4 text-sm rounded text-white bg-blue-600 hover:bg-blue-700 focus:outline-none"
-                >
-                  Log in
-                </button>
-              </div>
+              <button
+                href="/donate"
+                class="bg-orange-500 hover:bg-orange-400 text-white font-bold py-2 px-4 border-b-4 border-orange-700 hover:border-orange-500 rounded"
+              >
+                Replate Now
+              </button>
             </form>
           </div>
         </div>

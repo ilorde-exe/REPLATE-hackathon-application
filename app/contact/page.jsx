@@ -2,22 +2,22 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="flex flex-col px-6 py-2 mt-8">
-      <p className="p-4 rounded-xl shadow-lg border-2">
+    <div className="flex flex-col px-6 py-2 mt-8 ">
+      <p className="p-4 rounded-xl shadow-lg border-2 border-amber-100">
         <h1 className="text-2xl text-bold text-black">Contact Us</h1>
         <br />
         Contact Us Have a question, feedback, or just want to get in touch with
-        the Ummeed team? We'd love to hear from you! Feel free to reach out to
+        the Replate team? We'd love to hear from you! Feel free to reach out to
         us using the contact information below:
         <br />
         <br />
-        Email: info@ummeedapp.com
+        Email: info@replateapp.com
         <br />
         Phone: +1 (123) 456-7890
         <br />
         Address:
         <br />
-        Ummeed Headquarters
+        Replate Headquarters
         <br />
         123 Hope Street
         <br />
@@ -27,16 +27,16 @@ const page = () => {
         You can also connect with us on social media:
         <br />
         <br />
-        Facebook: @UmmeedApp
+        Facebook: @ReplateApp
         <br />
-        Twitter: @UmmeedApp
+        Twitter: @ReplateApp
         <br />
-        Instagram: @UmmeedApp
+        Instagram: @ReplateApp
         <br />
         <br />
         Our team is dedicated to making a positive impact in the fight against
         food waste and hunger. Thank you for your support and for being a part
-        of the Ummeed community!
+        of the Replate community!
       </p>
     </div>
   );
