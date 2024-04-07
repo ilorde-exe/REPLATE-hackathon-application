@@ -2,6 +2,9 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import axios from "axios";
+import Image from "next/image";
+import heroimage from "/public/hero-image.png";
+
 
 export default function Home() {
   const [data, setData] = useState(null);
@@ -23,15 +26,11 @@ export default function Home() {
   return (
     <div className=" font-serif">
       <div className="flex flex-col px-6 py-2 mt-8">
-        <div className="p-4 rounded-xl shadow-lg border-2 border-amber-100">
-          <span className="text-2xl text-bold">
-            Create a beacon for food donation
-          </span>
+        <div className="p-3">
+          <h1 className="text-4xl text-bold">Share your Celebration, Feed the hungry: Donate Your Event leftovers Today!</h1>
           <br />
-          <br />
-          Click the button below to let charitable organizations know about
-          excess food
-          <div className="mt-4 p-4">
+          
+          <div className="mt-4">
             <Link
               href="/donate"
               class="bg-orange-500 hover:bg-orange-400 text-white font-bold py-2 px-4 border-b-4 border-orange-700 hover:border-orange-500 rounded"
@@ -39,6 +38,13 @@ export default function Home() {
               Replate Now
             </Link>
           </div>
+          <Image
+      src={heroimage}
+      width={500}
+      height={500}
+      alt="Picture of Hero"
+      className="m-5"
+    />
         </div>
         {data ? (
           <div>
