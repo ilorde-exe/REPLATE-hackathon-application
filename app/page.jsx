@@ -34,7 +34,7 @@ export default function Home() {
 
           <div className="mt-4">
             <Link
-              href="/donate"
+              href="/choosing"
               class="bg-orange-500 hover:bg-orange-400 text-white font-bold py-2 px-4 border-b-4 border-orange-700 hover:border-orange-500 rounded"
             >
               Replate Now
