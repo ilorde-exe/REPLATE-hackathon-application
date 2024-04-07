@@ -1,32 +1,29 @@
 # Problem Statement
-Solving food disparity in urban and rural areas by bridging the gap between excess food and charitable organisations who are in need for that food (to be distributed to the people)
+The project aims to address food disparity in urban and rural areas by connecting surplus food with charitable organizations to distribute it to those in need.
 
-# Novelty
-- providing end-to-end solution <br>
-- indian based solution (crafted specifically for the indian market) <br>
-- intuitive UI/UX <br>
+## Novelty
+- Providing an end-to-end solution
+- Indian-based solution tailored for the Indian market
+- Intuitive UI/UX design
 
-# Present challenges with the problem statement
-- no having this platform for user in the indian market <br>
-- not solving food diplarity <br>
-- it hasnt been implement in an end to end basis ( taking in consideration of all kinds people, diversity <br>
-- not easy to use and navigate user interface which is easilty accessible by people of diefferent stratas/ diversity <br>
-- a shit ton of food being wasted opn an everydsy baisis () <br>
-- the leftover food is being thrown instead of being utilised by peole who are hingry and are in need of it <br>
+## Present Challenges with the Problem Statement
+- Absence of a platform in the Indian market
+- Failure to address food disparity effectively
+- Lack of comprehensive end-to-end implementation, considering diversity
+- Inaccessible and unintuitive user interface
+- Substantial food wastage daily
+- Disposal of leftover food instead of utilization by the needy
 
-Note: This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Our Proposed Solutions
+- Implementing an end-to-end solution to bridge the gap between excess food and charitable organizations
+- Incorporating visual impact and tracking features
+- Introducing a dashboard displaying real-time environmental and social impacts of food donations
+- Offering incentives for frequent participation
+- Collaborating with warehouses and government agencies for storage and preservation of raw and prepared food
+- Recruiting volunteer individuals and organizations for food delivery
+- Encouraging collaboration among apartments and societies to donate surplus food for pickup by volunteers
 
-# Our proposed solutions
-- an end to end solution to bridge the gap between excess food and charitable organisations <br>
-- visual impact/ tracking <br>
-- dashboard feature <br>
-- showcases real time updates of environmental and social impacts of food donations <br>
-- incentives for people being frequently involved in this <br>
-- to collaborate with wearehouse and govt agencies which can store raw ingredients (eg fruits and vegetables can be put in cold storage) and preserve prepared food for us ( would increase the shelf life by multifolds) <br>
-- volunteers individuals/ orgs which are interested in delievring the food would be selected <br>
-- apartments and societies can collaborate the surplus food and a volunteer can pick it up.  <br>
-
-## Getting Started
+### Getting Started
 
 First, run the development server:
 
@@ -38,7 +35,7 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
