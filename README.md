@@ -6,6 +6,14 @@ Solving food disparity in urban and rural areas by bridging the gap between exce
 - indian based solution (crafted specifically for the indian market) <br>
 - intuitive UI/UX <br>
 
+# Present challenges with the problem statement
+- no having this platform for user in the indian market <br>
+- not solving food diplarity <br>
+- it hasnt been implement in an end to end basis ( taking in consideration of all kinds people, diversity <br>
+- not easy to use and navigate user interface which is easilty accessible by people of diefferent stratas/ diversity <br>
+- a shit ton of food being wasted opn an everydsy baisis () <br>
+- the leftover food is being thrown instead of being utilised by peole who are hingry and are in need of it <br>
+
 Note: This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
