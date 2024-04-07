@@ -6,7 +6,7 @@ Solving food disparity in urban and rural areas by bridging the gap between exce
 - indian based solution (crafted specifically for the indian market) <br>
 - intuitive UI/UX <br>
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Note: This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
