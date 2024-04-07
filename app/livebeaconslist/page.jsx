@@ -33,6 +33,23 @@ export default function Home() {
           <h3 className="text-lg mt-2">Food for ~120</h3>
           <h3 className="text-lg mt-2">Available from 10:00PM</h3>
           <h3 className="text-lg mt-2">2.5km</h3>
+          
+          <div className="pt-3">
+            <Link
+              href="/donate"
+              class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-orange-700 hover:border-orange-500 rounded"
+            >
+              Approve
+            </Link>
+          </div>
+          <div className="pt-3">
+            <Link
+              href="/donate"
+              class="bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4 border-orange-700 hover:border-orange-500 rounded"
+            >
+              Reject
+            </Link>
+          </div>
           <hr class="h-px my-8 bg-orange-500 border-0"></hr>
         </div>
 
