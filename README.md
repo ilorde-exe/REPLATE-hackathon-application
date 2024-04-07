@@ -1,3 +1,6 @@
+# Problem Statement
+Solving food disparity in urban and rural areas by bridging the gap between excess food and charitable organisations who are in need for that food (to be distributed to the people)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
