@@ -16,6 +16,16 @@ Solving food disparity in urban and rural areas by bridging the gap between exce
 
 Note: This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# Our proposed solutions
+- an end to end solution to bridge the gap between excess food and charitable organisations <br>
+- visual impact/ tracking <br>
+- dashboard feature <br>
+- showcases real time updates of environmental and social impacts of food donations <br>
+- incentives for people being frequently involved in this <br>
+- to collaborate with wearehouse and govt agencies which can store raw ingredients (eg fruits and vegetables can be put in cold storage) and preserve prepared food for us ( would increase the shelf life by multifolds) <br>
+- volunteers individuals/ orgs which are interested in delievring the food would be selected <br>
+- apartments and societies can collaborate the surplus food and a volunteer can pick it up.  <br>
+
 ## Getting Started
 
 First, run the development server:
