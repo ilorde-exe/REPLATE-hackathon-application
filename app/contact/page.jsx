@@ -2,7 +2,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="flex flex-col px-6 py-2 mt-8 ">
+    <div className="flex flex-col px-6 py-2 mt-8 font-serif">
       <p className="p-4 rounded-xl shadow-lg border-2 border-amber-100">
         <h1 className="text-2xl text-bold text-black">Contact Us</h1>
         <br />

@@ -5,7 +5,6 @@ import axios from "axios";
 import Image from "next/image";
 import heroimage from "/public/hero-image.png";
 
-
 export default function Home() {
   const [data, setData] = useState(null);
   const fetchDataFromBenkiAPI = async () => {
@@ -27,9 +26,12 @@ export default function Home() {
     <div className=" font-serif">
       <div className="flex flex-col px-6 py-2 mt-8">
         <div className="p-3">
-          <h1 className="text-4xl text-bold">Share your Celebration, Feed the hungry: Donate Your Event leftovers Today!</h1>
+          <h1 className="text-4xl text-bold">
+            Share your Celebration, Feed the hungry: Donate Your Event leftovers
+            Today!
+          </h1>
           <br />
-          
+
           <div className="mt-4">
             <Link
               href="/donate"
@@ -39,12 +41,12 @@ export default function Home() {
             </Link>
           </div>
           <Image
-      src={heroimage}
-      width={500}
-      height={500}
-      alt="Picture of Hero"
-      className="m-5"
-    />
+            src={heroimage}
+            width={500}
+            height={500}
+            alt="Picture of Hero"
+            className="m-5"
+          />
         </div>
         {data ? (
           <div>
@@ -63,12 +65,12 @@ export default function Home() {
                         height="375"
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
-                        src={`https://www.google.com/maps/embed/v1/place?key=APIKEY=${encodeURIComponent(
+                        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBHgskmG3f7puRGh6avIDMryMKu8w7oR2M&&q=${encodeURIComponent(
                           event.Address
                         )}`}
                       ></iframe>
                       <br />
-                      {event.Address}
+                      Address:{event.Address}
                     </p>
                     <p>Description: {event.description}</p>
                   </div>
