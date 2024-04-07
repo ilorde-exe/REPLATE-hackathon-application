@@ -47,7 +47,30 @@ export default function Home() {
             alt="Picture of Hero"
             className="m-5"
           />
+          <h1 className="text-5xl mb-2">About us</h1>
+          <p className="py-3 text-xl text-gray-500">
+            Did you know that, on average, small Indian weddings result in a
+            staggering 40% of food going to waste? For grandiose celebrations,
+            the wastage can soar even higher, reaching a shocking 60%. <br />
+            <br />
+            Our mission is to make donating this food to credible organisations
+            as easy as ordering a Cab, while providing you with heartfelt
+            blessings of the needy and ensure that every bite serves a purpose.
+          </p>
         </div>
+
+        <h1 className="text-5xl mt-10 mb-2">Impact</h1>
+        <p className="py-3 text-xl text-gray-500">
+          We have been blessed to touch the lives of 20,000 families, ensuring
+          to keep away 83,000kgs of edible food away from the Landfills and
+          138tonnes of CO2eq away from our lungs. <br />
+          <br />
+          We’ve been touched by inundating words of appreciation from Donors and
+          Consumers alike, providing them a purpose to contribute to a seemingly
+          difficult task easily and the latter, the elixir of Life, helping them
+          lead better lives for themselves and their families.
+        </p>
+
         {data ? (
           <div>
             <br />
