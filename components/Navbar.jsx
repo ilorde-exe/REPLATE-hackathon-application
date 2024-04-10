@@ -97,7 +97,7 @@ const Navbar = () => {
                     About
                   </Link>
                   <Link
-                    href="http://10.19.12.15:3000/"
+                    href="http://10.19.12.15:3000/login"
                     className="-mx-3 block rounded-lg px-3 py-2 text-2xl leading-7 text-black hover:bg-gray-400 hover:bg-clip-padding hover:backdrop-filter hover:backdrop-blur-2xl hover:bg-opacity-5"
                     onClick={() => setmobileMenuOpen(false)}
                   >
