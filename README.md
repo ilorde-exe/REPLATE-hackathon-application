@@ -1,4 +1,4 @@
-![demo video](https://streamable.com/ip9eyn)
+[demo video](https://streamable.com/ip9eyn)
 
 # Problem Statement
 The project aims to address food disparity in urban and rural areas by connecting surplus food with charitable organizations to distribute it to those in need.
