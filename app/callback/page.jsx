@@ -77,7 +77,7 @@ export default function Home() {
             {data
               .filter((event) => event.active === true) // Filter events where active is true
               .map((event) => (
-                <div className="flex flex-col py-2 ">
+                <div key={event.EntryID} className="flex flex-col py-2 ">
                   <div className="p-4 rounded-xl shadow-lg border-2 border-amber-100">
                     <div key={event.EntryID}>
                       <h2 className="text-lg text-semibold">

@@ -32,7 +32,7 @@ export default function Home() {
             <div>
               <br />
               {data.map((event) => (
-                <div className="flex flex-col py-2 ">
+                <div key={event.EntryID} className="flex flex-col py-2 ">
                   <div className="p-2">
                     <div key={event.EntryID}>
                       <h2 className="text-4xl text-semibold text-orange-400">

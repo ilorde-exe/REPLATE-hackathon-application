@@ -7,8 +7,8 @@ const page = () => {
         <h1 className="text-2xl text-bold text-black">Contact Us</h1>
         <br />
         Contact Us Have a question, feedback, or just want to get in touch with
-        the Replate team? We'd love to hear from you! Feel free to reach out to
-        us using the contact information below:
+        the Replate team? We&apos;d love to hear from you! Feel free to reach
+        out to us using the contact information below:
         <br />
         <br />
         Email: info@replateapp.com

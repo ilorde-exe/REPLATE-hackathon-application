@@ -2,7 +2,7 @@
 import React from "react";
 import { useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [address, setAddresss] = useState("");
@@ -129,4 +129,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
